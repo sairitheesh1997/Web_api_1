@@ -40,7 +40,7 @@ namespace test_1.Controllers
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Update(int id, Issue issue) 
+        public async Task<IActionResult> Update(int id,[FromBody] Issue issue) 
         {
             if (id != issue.Id) return BadRequest();
             _context.Entry(issue).State = EntityState.Modified;
