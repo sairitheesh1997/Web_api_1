@@ -1,5 +1,4 @@
-# Web_api_1
-sample web api to do crud operations
+# Web_api
 
 This is a Sample Web API project to perform CRUD operations using EF core code first approach.
 
